@@ -68,14 +68,15 @@ header .mobile {
 }
 
 @media only screen and (max-width: 760px) {
-  header .desktop, .logo {
+  header  .logo {
     display: none;
   }
 
-  header .mobile {
+
+  /* header .mobile {
     display: block;
     width: 100%;
-  }
+  } */
 
   header .mobile ul {
     display: flex;
@@ -90,10 +91,15 @@ header .mobile {
   }
 }
 /* Banner */
+
+.about li {
+  list-style-type: initial;
+}
+
 .header_resume{
   font-weight: bold;
 }
-#feedback_resume {
+.link_away {
   color: navy;
   text-decoration: underline;
 }
@@ -117,13 +123,26 @@ header .mobile {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 30%;
+  width: 35%;
 }
 .banner-text h2{
   padding: 1rem 0;
 }
 .banner-mobile{
   display: none;
+}
+#room{
+  display: none;
+}
+ @media only screen and (max-width: 1360px) {
+  #room {
+    display: block;
+  }
+}
+@media only screen and (max-width: 1360px) {
+ #feed {
+   display: none;
+ }
 }
 @media only screen and (max-width: 760px) {
   .banner-desktop {
@@ -168,6 +187,7 @@ header .mobile {
 /* Info */
 .info{
   display: flex;
+
 }
 .article{
   width: 60%;
@@ -182,6 +202,8 @@ header .mobile {
 }
 .image-container-article {
   display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
   justify-content:space-evenly;
   overflow: hidden;
   width: 100%;
@@ -191,6 +213,7 @@ header .mobile {
   max-width: 100%;
   height: auto;
   display: block;
+
 }
 .stories{
   width: 40%;
@@ -235,9 +258,7 @@ header .mobile {
   #guest-mob{
     display: block;
   }
-  .article{
-    display: none;
-  }
+
   .stories{
     width: 100%;
   }
@@ -246,15 +267,8 @@ header .mobile {
     padding-top: 0rem;
     padding-bottom: 4rem;
   }
-  .story .image-story{
-    display: none;
-  }
-  .story .image-story-mobile{
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    width: 100%;
-  }
+
+
   .story img{
     max-width: 100%;
     height: auto;
@@ -270,8 +284,8 @@ header .mobile {
     line-height: 2.5rem;
   }
   .text-story p{
-    line-height: 2rem;
-    font-size: 1.5rem;
+    /* line-height: 2rem; */
+    /* font-size: 1.5rem; */
   }
   .story-p{
     padding-top: 1rem;
@@ -292,6 +306,11 @@ header .mobile {
   padding-bottom: 2rem;
   padding-left: 4.5rem;
   padding-right: 4.5rem;
+  justify-content: space-evenly;
+}
+.level{
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 .subject-container{
@@ -331,6 +350,7 @@ header .mobile {
   }
   .subjects-descr{
     flex-direction: column;
+    justify-content: flex-start;
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -343,22 +363,41 @@ header .mobile {
   }
   .text-subject h2{
     padding-top: 0;
-    line-height: 3.5rem;
+
   }
   .subject-container{
     width: 100%;
     margin-bottom: 0.5rem;
-    height: 3.5rem;
+    /* height: 3.5rem; */
   }
 }
+
+/*Clients Feedback*/
+.clients_feedback h1{
+  text-align: center;
+  padding: 2rem 0;
+}
+.image-container-article img{
+  margin-bottom: 1rem;
+}
+/* margin-bottom: 4rem; */
+
+#link_feedback{
+  text-align: center;
+  padding: 2rem 0;
+}
+
 /*Thesis Exhibit*/
-.video-container{
-  overflow: hidden;
-  width: 100%;
+
+.thesis{
+  background-color: lightgrey;
 }
 .article img{
 
   display: block;
+}
+.article-text h2{
+    text-align: center;
 }
 .thesis .article{
   padding-top: 0rem;
@@ -366,6 +405,9 @@ header .mobile {
 
 .thesis .stories{
   padding-top: 0rem;
+}
+.thesis .stories h1{
+  text-align: center;
 }
 
 .urban-text h2{
@@ -376,31 +418,53 @@ header .mobile {
 #fisma{
   background-color: lightgrey;
 }
-.video-container-mobile{
-  display: none;
-}
 
 .thesis h1{
   text-align: center;
   padding: 2rem 0;
 }
+.urban-text h2{
+  text-align: center;
+}
 
-@media only screen and (max-width: 760px) {
-  .thesis .stories{
+
+@media only screen and (max-width: 1560px) {
+  .info_1{
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 860px) {
+  .image-map{
     display: none;
   }
-  .video-container-mobile{
-    display: flex;
-  }
-  .video-container{
-    overflow: hidden;
-    width: 100%;
-  }
-  .thesis video{
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }
+}
+.info_1{
+  display: flex;
+align-items: center;
+  justify-content: center;
+}
+.socials{
+  display: flex;
+flex-direction: column;
+}
+.soc1{
+  padding-bottom: 2rem;
+  display: flex;
+  align-items: center;
+
+}
+.urban-text{
+  width: 50%;
+}
+#phone{
+  font-size: 1.5rem;
+}
+.image-map{
+  overflow: hidden;
+  width: 100%;
 }
 
 /*Footer*/

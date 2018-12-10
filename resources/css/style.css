@@ -134,9 +134,16 @@ header .mobile {
 #room{
   display: none;
 }
+#room-adress{
+  display: none;
+}
  @media only screen and (max-width: 1360px) {
   #room {
     display: block;
+  }
+  #room-adress {
+    display: block;
+    text-align: center;
   }
 }
 @media only screen and (max-width: 1360px) {
@@ -187,7 +194,7 @@ header .mobile {
 /* Info */
 .info{
   display: flex;
-
+  background-color: lightgrey;
 }
 .article{
   width: 60%;
@@ -203,8 +210,8 @@ header .mobile {
 .image-container-article {
   display: flex;
   flex-wrap: wrap;
-  /* align-items: center; */
-  justify-content:space-evenly;
+  align-items: center;
+  justify-content:center;
   overflow: hidden;
   width: 100%;
 }
@@ -294,7 +301,7 @@ header .mobile {
 
 /*Start Learning*/
 .start-learning{
-  background-color: lightgrey;
+
 }
 .start-learning h1{
   text-align: center;
@@ -384,7 +391,7 @@ header .mobile {
 
 #link_feedback{
   text-align: center;
-  padding: 2rem 0;
+  padding: 1rem 2rem;
 }
 
 /*Thesis Exhibit*/
@@ -436,15 +443,17 @@ header .mobile {
     justify-content: center;
   }
 }
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 1100px) {
   .image-map{
     display: none;
   }
 }
+
 .info_1{
   display: flex;
 align-items: center;
   justify-content: center;
+    flex-direction: column;
 }
 .socials{
   display: flex;
@@ -457,7 +466,7 @@ flex-direction: column;
 
 }
 .urban-text{
-  width: 50%;
+  width: 40%;
 }
 #phone{
   font-size: 1.5rem;

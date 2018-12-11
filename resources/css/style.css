@@ -446,7 +446,7 @@ header .mobile {
 
 .image-map{
   overflow: hidden;
-  width: 100%;
+/*  width: 100%;*/
 
 }
 .image-map img{

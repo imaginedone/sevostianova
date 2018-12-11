@@ -473,7 +473,7 @@ flex-direction: column;
 
 }
 .urban-text{
-  width: 100%;
+ /* width: 100%;*/
    display: flex;
 align-items: center;
   justify-content: center;
@@ -483,10 +483,7 @@ align-items: center;
 #phone{
   font-size: 1.5rem;
 }
-/* .image-map{
-  overflow: hidden;
-  width: 100%;
-} */
+
 
 /*Footer*/
 footer{

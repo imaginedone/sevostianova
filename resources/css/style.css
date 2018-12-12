@@ -307,11 +307,11 @@ header .mobile {
 }
 .subjects-descr{
   display: flex;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
   padding-bottom: 2rem;
   padding-left: 4.5rem;
   padding-right: 4.5rem;
-  justify-content: space-evenly;
+ /* justify-content: space-evenly;*/
 }
 .level{
   display: flex;

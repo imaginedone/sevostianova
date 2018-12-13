@@ -298,9 +298,11 @@ header .mobile {
 }
 
 /*Start Learning*/
-.start-learning{
-
+.services_part{
+  display: flex;
+  justify-content: space-evenly;
 }
+
 .start-learning h1{
   text-align: center;
   padding: 2rem 0;
@@ -319,7 +321,7 @@ header .mobile {
   justify-content: space-evenly;
 }
 .subject-container{
-  width: 31.5%;
+  width:31.5%;
   margin-bottom: 4rem;
   background-color: #f3f5f5;
 }
@@ -473,11 +475,15 @@ flex-direction: column;
 
 }
 .urban-text{
+<<<<<<< Updated upstream
  /* width: 100%;*/
    display: flex;
 align-items: center;
   justify-content: center;
     flex-direction: column;
+=======
+  width: 40%;
+>>>>>>> Stashed changes
 }
 
 #phone{

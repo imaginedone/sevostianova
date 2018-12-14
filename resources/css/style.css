@@ -299,6 +299,7 @@ header .mobile {
 
 /*Start Learning*/
 .services_part{
+   width:63%;
   display: flex;
   justify-content: space-evenly;
 }
@@ -321,7 +322,7 @@ header .mobile {
   justify-content: space-evenly;
 }
 .subject-container{
-  width:31.5%;
+ /* width:31.5%;*/
   margin-bottom: 4rem;
   background-color: #f3f5f5;
 }

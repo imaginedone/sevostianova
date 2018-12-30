@@ -144,6 +144,8 @@ header .mobile {
   #room-adress {
     display: block;
     text-align: center;
+    font-size: 2rem;
+    line-height: 2.8rem;
   }
 }
 @media only screen and (max-width: 1360px) {
@@ -298,7 +300,7 @@ header .mobile {
 
 /*Start Learning*/
 .services_part{
-  
+
   display: flex;
   justify-content: space-evenly;
 }
@@ -386,7 +388,13 @@ header .mobile {
 }
 .image-container-article img{
   margin-bottom: 1rem;
+  padding: 2rem 2rem;
 }
+
+.image-container-article{
+  display: flex;
+}
+
 /* margin-bottom: 4rem; */
 
 #link_feedback{
@@ -508,13 +516,15 @@ align-items: center;
 }
 .urban-text #adr {
   font-size: 2.5rem;
+  text-align: center;
   /* padding: 1.5rem; */
   line-height: 2.8rem;
 }
 .urban-text #direction {
   font-size: 1.5rem;
-   padding-bottom: 1rem;
+  padding-bottom: 1rem;
   line-height: 2.8rem;
+  text-align: center;
 }
 
 .info_1 h2{

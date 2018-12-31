@@ -196,7 +196,7 @@ header .mobile {
 /* Info */
 .info{
   display: flex;
-  background-color: lightgrey;
+  /* background-color: lightgrey; */
 }
 .article{
   width: 60%;
@@ -205,6 +205,9 @@ header .mobile {
 
   padding: 2rem 1.5rem;
 }
+
+
+
 .article-text h1{
   padding-top: 2rem;
   padding-bottom: 1.5rem;
@@ -220,9 +223,18 @@ header .mobile {
 
   max-width: 100%;
   height: auto;
-  display: block;
-
+   display: block;
+padding: 2rem 2rem;
 }
+
+.image-container-article{
+  margin-bottom: 1rem;
+  overflow: hidden;
+  width: 100%;
+display: flex;
+flex-wrap: wrap;
+}
+
 .stories{
   width: 40%;
   padding-top: 1rem;
@@ -323,7 +335,7 @@ header .mobile {
   justify-content: space-evenly;
 }
 .subject-container{
-  width: 35%;
+  width: 45%;
   margin-bottom: 4rem;
   background-color: #f3f5f5;
 }
@@ -342,9 +354,13 @@ header .mobile {
 
 .text-subject h2{
   padding-top: 2rem;
+  font-size: 2rem;
+  line-height: 2.8rem;
 }
 .text-subject p{
   padding-top: 1rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 .subject-descr{
   padding-bottom: 1.5rem;
@@ -382,17 +398,18 @@ header .mobile {
 }
 
 /*Clients Feedback*/
+.clients_feedback{
+  background-color: lightgrey;
+}
 .clients_feedback h1{
   text-align: center;
   padding: 2rem 0;
 }
-.image-container-article img{
-  margin-bottom: 1rem;
-  padding: 2rem 2rem;
-}
+
 
 .image-container-article{
-  display: flex;
+   /* display: flex; */
+
 }
 
 /* margin-bottom: 4rem; */
@@ -420,7 +437,7 @@ header .mobile {
 /*Thesis Exhibit*/
 
 .thesis{
-  background-color: lightgrey;
+  /* background-color: lightgrey; */
 }
 .article img{
 
@@ -556,4 +573,31 @@ footer{
   .legal{
     display: none;
   }
+}
+.new-feedback{
+  background-color: lightgrey;
+
+}
+.new-feedback h1{
+  padding: 2rem 0;
+  text-align: center;
+}
+.feedback-cl{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50%;
+}
+.f-cl{
+  /* width: 80%; */
+  padding: 2rem 5rem;
+}
+.feedback-column{
+  display: flex;
+  justify-content: center;
+    /* flex-wrap: wrap; */
+}
+.head-cl{
+  font-weight: bold;
 }
